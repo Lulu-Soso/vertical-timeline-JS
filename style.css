@@ -44,7 +44,7 @@ body {
     justify-content: flex-end;
 }
 
-.wrapper .row section {
+.wrapper .row article {
     background: #fff;
     border-radius: 5px;
     width: calc(50% - 40px);
@@ -52,7 +52,7 @@ body {
     position: relative;
 }
 
-.wrapper .row section::before {
+.wrapper .row article::before {
     position: absolute;
     content: "";
     height: 15px;
@@ -63,15 +63,15 @@ body {
     transform: rotate(45deg);
 }
 
-.row-1 section::before {
+.row-1 article::before {
     right: -7px;
 }
 
-.row-2 section::before {
+.row-2 article::before {
     left: -7px;
 }
 
-.row section .icon,
+.row article .icon,
 .center-line .scroll-icon {
     position: absolute;
     background: #f2f2f2;
@@ -92,33 +92,33 @@ body {
     transform: translateX(-50%);
 }
 
-.row-1 section .icon {
+.row-1 article .icon {
     top: 13px;
     right: -60px;
 }
 
-.row-2 section .icon {
+.row-2 article .icon {
     top: 13px;
     left: -60px;
 }
 
-.row section .details,
-.row section .bottom {
+.row article .details,
+.row article .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.row section .details .title {
+.row article .details .title {
     font-size: 22px;
     font-weight: 600;
 }
 
-.row section p {
+.row article p {
     margin: 10px 0 17px 0;
 }
 
-.row section .bottom a {
+.row article .bottom a {
     text-decoration: none;
     background: #ff7979;
     color: #fff;
@@ -127,6 +127,117 @@ body {
     font-size: 17px;
     font-weight: 400;
 }
+
+/******************************************/
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#event-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#event-form label {
+    margin: 10px;
+}
+
+#event-form input,
+#event-form textarea {
+    padding: 5px;
+    margin: 5px;
+}
+
+#event-form button {
+    padding: 5px;
+    margin: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#event-form button:hover {
+    background-color: #0073AD;
+}
+
+#timeline {
+    margin: 20px auto;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+.events {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.events.right {
+    left: 50%;
+}
+
+.event {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    background-color: white;
+    width: 40%;
+}
+
+.event:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    transform: translateY(-50%);
+}
+
+.event:first-child:before {
+    display: none;
+}
+
+.event h2 {
+    margin: 0;
+}
+
+.event .date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event .description {
+    margin: 10px 0;
+}
+
+.event.right {
+    left: 50%;
+}
+
+
 
 /*medias queries*/
 @media(max-width: 790px) {
@@ -137,23 +248,23 @@ body {
         margin: 30px 0 3px 60px;
     }
 
-    .wrapper .row section {
+    .wrapper .row article {
         width: 100%;
     }
 
-    .row-1 section::before {
+    .row-1 article::before {
         left: -7px;
     }
 
-    .row-1 section .icon {
+    .row-1 article .icon {
         left: -60px;
     }
 }
 
 @media(max-width: 440px) {
     .wrapper .center-line,
-    .row-1 section::before,
-    .row-1 section .icon {
+    .row-1 article::before,
+    .row-1 article .icon {
         display: none;
     }
 

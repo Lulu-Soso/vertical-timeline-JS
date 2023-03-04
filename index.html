@@ -11,100 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="wrapper">
-        <div class="center-line">
-            <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
-        </div>
-        <div class="row row-1">
-            <section>
-                <i class="icon fas fa-home"></i>
-                <div class="details">
-                    <span class="title">Title of selection 1</span>
-                    <span>1st Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
+<!-- HTML pour le formulaire -->
+<h1>Ma Timeline</h1>
+<form id="event-form">
+    <label for="event-title">Titre :</label>
+    <input type="text" id="event-title" required>
+    <label for="event-date">Date :</label>
+    <input type="date" id="event-date" required>
+    <label for="event-description">Description :</label>
+    <textarea id="event-description" required></textarea>
+    <button type="submit">Ajouter événement</button>
+</form>
+    <div class="wrapper"></div>
 
-        <div class="row row-2">
-            <section>
-                <i class="icon fas fa-star"></i>
-                <div class="details">
-                    <span class="title">Title of selection 2</span>
-                    <span>2nd Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
-
-        <div class="row row-1">
-            <section>
-                <i class="icon fas fa-rocket"></i>
-                <div class="details">
-                    <span class="title">Title of selection 3</span>
-                    <span>3rd Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
-
-        <div class="row row-2">
-            <section>
-                <i class="icon fas fa-globe"></i>
-                <div class="details">
-                    <span class="title">Title of selection 4</span>
-                    <span>4th Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
-
-        <div class="row row-1">
-            <section>
-                <i class="icon fas fa-paper-plane"></i>
-                <div class="details">
-                    <span class="title">Title of selection 5</span>
-                    <span>5th Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
-
-        <div class="row row-2">
-            <section>
-                <i class="icon fas fa-map-marker-alt"></i>
-                <div class="details">
-                    <span class="title">Title of selection 6</span>
-                    <span>6th Jan 2021</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloremque ducimus earum eveniet repellat repudiandae sit. At cum laborum minima!</p>
-                <div class="bottom">
-                    <a href="#">Read more</a>
-                    <i>- Someone famous</i>
-                </div>
-            </section>
-        </div>
-    </div>
+<script src="script.js"></script>
 
 </body>
 </html>
