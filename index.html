@@ -8,9 +8,20 @@
     <title>Timeline</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
+<form id="create-event-form">
+    <label for="create-event-title">Titre :</label>
+    <input type="text" id="create-event-title" required>
+    <label for="event-date-start">Date de départ:</label>
+    <input type="date" id="event-date-start" required>
+    <label for="event-date-end">Date de retour:</label>
+    <input type="date" id="event-date-end" required>
+    <button type="submit">Ajouter événement</button>
+</form>
 <!-- HTML pour le formulaire -->
 <h1>Ma Timeline</h1>
 <form id="event-form">
@@ -22,7 +33,35 @@
     <textarea id="event-description" required></textarea>
     <button type="submit">Ajouter événement</button>
 </form>
-    <div class="wrapper"></div>
+<section class="add-events">
+    <div class="achat">
+        <button class="add-event-btn"><i class="fa-brands fa-shopify"></i></button>
+        <p>Achat</p>
+    </div>
+    <div class="restaurant">
+        <button class="add-event-btn"><i class="fa-solid fa-utensils"></i></button>
+        <p>Restaurant</p>
+    </div>
+    <div class="activity">
+        <button class="add-event-btn"><i class="fa-solid fa-person-walking"></i></button>
+        <p>Activité</p>
+    </div>
+    <div class="essence">
+        <button class="add-event-btn"><i class="fa-solid fa-gas-pump"></i></button>
+        <p>Carburant</p>
+    </div>
+    <div class="essence">
+        <button class="add-event-btn"><i class="fa-solid fa-car"></i></button>
+        <p>Location</p>
+    </div>
+    <div class="essence">
+        <button class="add-event-btn"><i class="fa-solid fa-bed"></i></button>
+        <p>Hébergement</p>
+    </div>
+</section>
+<div class="row row-end"></div>
+<div class="wrapper"></div>
+<div class="row row-start"></div>
 
 <script src="script.js"></script>
 

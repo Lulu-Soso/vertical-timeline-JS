@@ -15,6 +15,41 @@ body {
     background: #ff7979;
 }
 
+.add-events {
+    max-width: 1200px;
+    min-height: 100px;
+    background-color: #f2f2f2;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.add-events div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.add-events i {
+    font-size: 19px;
+}
+
+.add-event-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.row-end,
+.row-start {
+    background-color: #f2f2f2;
+    height: 100px;
+    margin: 10px auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
 .wrapper {
     max-width: 1080px;
     margin: 50px auto;
